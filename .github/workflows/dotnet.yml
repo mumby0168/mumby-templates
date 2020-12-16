@@ -28,5 +28,5 @@ jobs:
     - name: pack
       run: nuget pack src/mumby-pacakges.nuspec -OutputDirectory temp/
     - name: push
-      run: nuget push temp/*.nupkg
+      run: nuget push temp/*.nupkg -src https://api.nuget.org/v3/index.json
          
