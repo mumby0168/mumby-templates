@@ -11,6 +11,7 @@
     <packageTypes>
       <packageType name="Template" />
     </packageTypes>
+    <projectUrl>https://github.com/mumby0168/mumby-templates</projectUrl>
   </metadata>
   <files>
     <file src=".\content\**\*.*" exclude=".\content\**\bin\**\*.*;.\content\**\obj\**\*.*" target=".\content" />
