@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{ABC7F2B5-D1D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "content", "content", "{F050CB75-7DE6-4862-AE89-2BD62A39B48C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "consoledi", "src\content\ConsoleDi\consoledi.csproj", "{2B395836-221E-43B5-9754-7C571F93C373}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "consoledi", "src\content\ConsoleDi\ConsoleDi.csproj", "{2B395836-221E-43B5-9754-7C571F93C373}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
