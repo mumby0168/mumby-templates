@@ -1,0 +1,32 @@
+name: .NET
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+    - name: restore dependencies
+      run: dotnet restore
+    - name: build
+      run: dotnet build --no-restore
+    - name: setup nuget.exe
+      uses: NuGet/setup-nuget@v1.0.5
+      with:
+        nuget-api-key: ${{secrets.NUGET_KEY}}
+    - name: pack
+      run: nuget pack src/mumby-pacakges.nuspec -OutputDirectory temp/
+    - name: push
+      run: nuget push temp/*.nupkg
+         
