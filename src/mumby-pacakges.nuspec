@@ -13,6 +13,6 @@
     </packageTypes>
   </metadata>
   <files>
-    <file src="src\Content\**\*.*" exclude="src\Content\**\bin\**\*.*;src\Content\**\obj\**\*.*" target="Content" />
+    <file src=".\content\**\*.*" exclude=".\content\**\bin\**\*.*;.\content\**\obj\**\*.*" target=".\content" />
   </files>  
 </package>
