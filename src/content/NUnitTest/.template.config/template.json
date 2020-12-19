@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Billy Mumby",
+    "classifications": ["Library"],
+    "identity": "Mumby.Mock.Shouldly.NUnit",
+    "name": "Mock Unit Test",
+    "shortName": "msnunit",
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    },
+    "sourceName": "NUnitTest"
+  }
